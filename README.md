@@ -16,5 +16,5 @@ pip install -r requirements.txt
 python excel_manager.py -f sample.xlsx
 ``` 
 
-(出力された画像)[./image/sample.png]
+[出力された画像](image/sample.png)
 
