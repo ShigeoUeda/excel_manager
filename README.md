@@ -13,6 +13,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # サンプルの実行
-python excel_manager.py
+python excel_manager.py -f sample.xlsx
 ``` 
+
+(出力された画像)[./image/sample.png]
 
