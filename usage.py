@@ -1,35 +1,3 @@
-# excel_manager
-Excelファイルのセルからデータ取得・格納するなどのライブラリ
-
-```bash
-# GitHubからリポジトリをクローン
-git clone https://github.com/ShigeoUeda/excel_manager.git
-
-# ディレクトリの移動
-cd excel_manager
-
-# Pythonの仮想環境を作成・有効化
-python -m venv venv
-source venv/bin/activate 
-
-# ライブラリのインストール
-pip install -r requirements.txt
-
-# サンプルの実行
-python excel_manager.py -f sample.xlsx
-``` 
-
-# 実行結果
-
-**1つ目のシートでは無いことに注意**
-
-![出力された画像](image/sample.png)
-
-
-# 使用例
-
-usage.py:
-```python 
 from excel_manager import ExcelManager
 
 excel = ExcelManager(r"sample.xlsx")
@@ -57,4 +25,3 @@ range_data = excel.read_range("データ", 2, "A", 3, "C")
 print(f"読み込んだデータ: {range_data}")
 
 excel.save()
-```
